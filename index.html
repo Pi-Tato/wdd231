@@ -4,43 +4,47 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Karla:wght@500&family=Libre+Franklin&family=Merriweather:wght@900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce</title>
     <meta discription="WDD - 231">
     <meta author="Noah Carlisle">
+    <script src="scripts/homePage.js" defer></script>
 </head>
-<header>
-    <span>
-        <img src="images/Noah Portrait.jpg" alt="Noah Carlisle" width="100">
-        <h1>Noah Carlisle</h1>
-    </span>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">Chamber</a></li>
-            <li><a href="https://github.com/Pi-Tato">GitHub Profile</a></li>
-            <li><a href="https://www.linkedin.com/in/noah-carlisle-a916b9257/">LinkedIn</a></li>
-        </ul>
-    </nav>
-</header>
-<body>
-    <main>
+<main>
+    <header>
+        <span>
+            <img src="images/Noah Portrait.jpg" alt="Noah Carlisle" width="100">
+            <h1>Noah Carlisle</h1>
+        </span>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="https://github.com/Pi-Tato">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/noah-carlisle-a916b9257/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
         <h1>Home</h1>
-        <section>
-            <h2>Stuff</h2>
-        </section>
-        <section>
-            <h2>More Stuff</h2>
-        </section>
-        <section>
-            <h2>Even More Stuff</h2>
-        </section>
-    </main>
-</body>
-<footer>
-    <p>&copy; <span id="currentYear"></span> | Noah Carlisle | Idaho, USA</p>
-    <p><span id="lastModified"></span></p>
-</footer>
+        <div class = "stuff">
+            <section>
+                <h2>Course Work</h2>
+            </section>
+            <section>
+                <h2>Idaho, USA</h2>
+            </section>
+            <section>
+                <h2>Web and Computer Programming Certificate</h2>
+            </section>
+        </div>
+    </body>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Noah Carlisle | Idaho, USA</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</main>
 </html>
