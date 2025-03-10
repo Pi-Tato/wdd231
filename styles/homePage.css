@@ -8,7 +8,7 @@ header{
     background-color: #acacac;
 }
 
-img{
+span img{
     padding: 1rem;
     width : 200px;
     padding-top: 3rem;
@@ -27,6 +27,21 @@ h2 {
 	color: rgb(255, 255, 255);
 	text-align: center;
 	margin: 1rem;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border: #000 solid 3px;
+}
+
+section p {
+	color: #fff;
+	padding: .5rem;
+	text-align: center;
+	border: #000 solid 3px;
 }
 
 nav {
@@ -88,9 +103,9 @@ nav {
 	margin: 1rem;
 	border: 5px solid rgb(0  0  0 / 0.1);
 	background-color: rgb(95, 95, 95);
-	height: 50vh;
+	height: fit-content;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .stuff section{
@@ -138,9 +153,14 @@ footer{
         padding: 1rem;
         display: flex;
         flex: 1 1 100%;
+		margin-bottom: 60px;
 	}
 
     .stuff section{
         width: 50%;
     }
+
+	#courseWork {
+		width: 100%;
+	}
 }

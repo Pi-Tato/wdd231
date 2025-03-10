@@ -1,7 +1,8 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 const year = document.querySelector('#currentYear');
-let lastModified = document.querySelector('#lastModified');
+const lastModified = document.querySelector('#lastModified');
+const courseWork = document.querySelector('#courseWork');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
@@ -89,3 +90,13 @@ const courses = [
         completed: false
     }
 ]
+
+for (let i = 0; i < courses.length; i++) {
+    courseWork.innerHTML += `<p class="course">${courses[i].subject} ${courses[i].number} - ${courses[i].title} - Completed: ${courses[i].completed}</p>`;
+}
+for (let i = 0; i < courses.length; i++) {
+    if(!courses[i].completed) {
+        let course = document.querySelector(`.course:nth-child(${i + 2})`);
+        course.style.color = 'red';
+    }
+}
