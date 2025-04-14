@@ -32,10 +32,9 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 20%;
-    margin-right: 20%;
     margin-bottom: 50px;
     padding: 1.5rem;
+    background-color: #75c8cc;
 }
 
 main h2{
@@ -43,7 +42,7 @@ main h2{
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: black;
     margin: 1rem;
 }
 
@@ -52,7 +51,7 @@ main p{
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: #263f44;
     margin: 1rem;
 }
 
@@ -61,10 +60,14 @@ main ul{
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    color: rgb(0, 0, 0);
-    margin: 1rem;
+    color: #263f44;
 }
 
 main img{
     width: 100%;
+}
+
+main{
+    margin-left: 20%;
+    margin-right: 20%;
 }
